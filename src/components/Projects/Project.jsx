@@ -1,13 +1,11 @@
 import "./Project.css";
-import AllProjects from './Data'
-
+import AllProjects from "./Data";
 
 const Project = () => {
-
   return (
-    <section id="portfolio">
-      <h5>My Recent Work</h5>
-      <h2>ProJects</h2>
+    <section id="project">
+      <h5 style={{ color: "black" }}>My Recent Work</h5>
+      <h2 style={{ color: "black" }}>ProJects</h2>
       <div className="container portfolio__container">
         {AllProjects.map((value) => (
           <article className="portfolio__item" key={value.id}>
