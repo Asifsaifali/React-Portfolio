@@ -1,18 +1,15 @@
-import './Contact.css';
-import { useRef, useState } from 'react';
-import { MdOutlineEmail } from 'react-icons/md';
+import "./Contact.css";
+import { MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
-  const [message, setMessage] = useState(false);
- 
   return (
     <section id="contact">
-      <h5>Get In Touch</h5>
-      <h5>
+      <h5 style={{ color: "black" }}>Get In Touch</h5>
+      <h5 style={{ color: "black" }}>
         I do receive your messages and will respond asap if the valid email is
-        provided 
+        provided
       </h5>
-      <h2>Contact Me</h2>
+      <h2 style={{ color: "black" }}>Contact Me</h2>
       <div className="container contact__container">
         <div className="contact__options">
           <article className="contact__option">
@@ -22,7 +19,7 @@ const Contact = () => {
             <a href="mailto:asif263848@gmail.com">Send a message</a>
           </article>
         </div>
-        <form onSubmit={()}>
+        <form onSubmit={(e) => e.preventDefault()}>
           <input
             type="text"
             placeholder="Your Full Name"
@@ -44,7 +41,7 @@ const Contact = () => {
           <button type="submit" className="btn btn-primary">
             Send Message
           </button>
-          {message && <span>Thanks, I'll reply ASAP</span>}
+          <span style={{ color: "black" }}> Thanks, I'll reply ASAP</span>
         </form>
       </div>
     </section>

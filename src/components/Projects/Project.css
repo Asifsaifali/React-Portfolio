@@ -5,17 +5,23 @@
 }
 
 .portfolio__item {
-    background: var(--color-bg-variant);
+    background-color: rgb(34, 90, 108);;
     padding: 1.3rem;
     border-radius: 2rem;
     border: 1px solid transparent;
+    color: black;
     transition: var(--transition);
 }
 
 .portfolio__item:hover {
     border-color: var(--color-primary-variant);
-    background: transparent;
+    background-color: rgb(43, 176, 221);
+    transition: all 1s ease-in-out;
+    cursor: pointer;
+    color: black;
 }
+
+
 
 .portfolio__item-image {
     border-radius: 1.5rem;

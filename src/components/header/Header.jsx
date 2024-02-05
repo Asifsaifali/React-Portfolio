@@ -1,7 +1,6 @@
-
-import Resume from './Resume';
-import HeaderSocials from './SocialMedia';
-import './header.css';
+import Resume from "./Resume";
+import Socials from "./SocialMedia";
+import "./header.css";
 
 const Header = () => {
   return (
@@ -9,12 +8,12 @@ const Header = () => {
       <div className="container header__container">
         <h3>Hello I am</h3>
         <h1>Asif Hussain</h1>
-        <h5 className="text-light">Front-end Developer</h5>
+        <h5>Web Developer</h5>
         <Resume />
         <a href="#contact" className="scroll__down">
           Scroll Down
         </a>
-        <HeaderSocials />
+        <Socials />
       </div>
     </header>
   );

@@ -7,8 +7,7 @@ const Project = () => {
   return (
     <section id="portfolio">
       <h5>My Recent Work</h5>
-      <h2>Portfolio</h2>
-
+      <h2>ProJects</h2>
       <div className="container portfolio__container">
         {AllProjects.map((value) => (
           <article className="portfolio__item" key={value.id}>
@@ -28,14 +27,6 @@ const Project = () => {
                 rel="noreferrer"
               >
                 GitHub
-              </a>
-              <a
-                href={value.link}
-                target="_blank"
-                className="btn btn-primary"
-                rel="noreferrer"
-              >
-                Live Demo
               </a>
             </div>
           </article>
