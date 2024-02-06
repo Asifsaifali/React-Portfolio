@@ -15,8 +15,8 @@ footer a:hover {
   transform: scale(1.1);
 }
 
-ul li:hover{
-    transform: scale(1.1);
+ul li:hover {
+  transform: scale(1.1);
 }
 
 .footer__logo {
@@ -26,7 +26,7 @@ ul li:hover{
   display: inline-block;
 }
 
-.permalinks {
+.lower_links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -61,7 +61,7 @@ ul li:hover{
 }
 
 @media screen and (max-width: 600px) {
-  .permalinks {
+  .lower_links {
     flex-direction: column;
     gap: 1.5rem;
   }
